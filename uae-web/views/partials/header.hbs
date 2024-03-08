@@ -1,0 +1,63 @@
+<div class="loader">
+    <img src="{{API_URL}}{{common.Logo.url}}" />
+</div>
+<!--header section desktop-->
+<header class="header_nav _desktop">
+    <div class="_inner_nav">
+        <div class="_bottom_nav">
+            <div class="_inner_bottom">
+                <div class="_left">
+                    <a href="/"><img src="{{API_URL}}{{common.Logo.url}}" /></a>
+                </div>
+                <div class="_center">
+                    <ul>
+                        {{#if menu}}
+                        {{#each menu}}
+                        <li><a href="{{Link}}" class="{{Class}} {{#ifEquals ../activePage Title}}_active_nav{{/ifEquals}}">{{Title}}</a></li>
+                        {{/each}}
+                        {{/if}}
+
+                        {{!-- <li><a class="_active_nav" href="about.html">About Us</a></li> --}}
+                        <!--<li><a href="javascript:void(0);">UAE-India</a></li>-->
+                        {{!-- <li><a href="javascript:void(0);" class="modal-toggle">Contact Us</a></li> --}}
+                        <!--<li><a href="javascript:void(0);">FAQ</a></li>-->
+                        <!--<li><a href="javascript:void(0);"><i class="fa fa-search" aria-hidden="true"></i></a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header section desktop-->
+
+<!--header section mobile-->
+<header class="header_nav _mobile">
+    <div class="_inner_nav">
+        <div class="_mobile_nav">
+            <div class="_center">
+                <a href="/"><img src="{{API_URL}}{{common.Logo.url}}" /></a>
+            </div>
+            <div class="_right">
+                <a href="javascript:void(0);" class="navicon"><img src="./images/humberger_menu.png" /></a>
+                <ul class="navshow">
+
+                    {{#if menu}}
+                        {{#each menu}}
+                        <li><a href="{{Link}}" class="{{Class}} {{#ifEquals ../activePage Title}}_active_nav{{/ifEquals}}">{{Title}}</a></li>
+                        {{/each}}
+                        {{/if}}
+
+                    {{!-- <li><a href="index.html" class="_active_nav">Home</a></li>
+                    <li><a href="about.html">About Us</a></li> --}}
+ {{!-- <li><a href="javascript:void(0);" class="modal-toggle">Contact Us</a></li> --}}
+
+                    <!--<li><a href="javascript:void(0);">UAE-India</a></li>-->
+                    <!--<li><a href="javascript:void(0);">FAQ</a></li>-->
+                    <!--<li><a href="javascript:void(0);"><i class="fa fa-search" aria-hidden="true"></i></a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

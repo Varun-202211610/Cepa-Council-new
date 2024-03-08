@@ -1,0 +1,202 @@
+{{> header }}
+
+<!--banner section-->
+<section role="banner section">
+    <div class="_technology_section"
+        style="background : url({{API_URL}}{{data.Banner.url}}) center center/cover no-repeat;"
+        data-background="{{API_URL}}{{data.Banner.url}}">
+        <div class="overlay"></div>
+        <div class="_inner_section">
+            <div class="_text_section">
+                <h2 class="wow fadeInUp" data-wow-delay="0.5s">{{data.Heading}}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--banner section-->
+
+<!---about paragraph section-->
+<section role="paragraph section">
+    <div class="_para_section">
+        <div class="_inner_about">
+		<p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+Harnessing the power of data management and AI-powered
+                analytics, we build a smart digital platform to optimize the performance of buildings at every stage of
+                their lifecycle. Our fault detection diagnostics enable predictive maintenance of buildings, while our
+                energy optimization platform is also proven to deliver strong energy savings to another level. ​</p>
+            
+        </div>
+    </div>
+</section>
+<!---about paragraph section-->
+
+<!---our benefit section-->
+<section role="benefit section">
+    <div class="_benefit_section"
+        style="background: url({{API_URL}}{{data.BenefitBackground.url}}) center center/cover no-repeat;"
+        data-background="{{API_URL}}{{data.BenefitBackground.url}}">
+        <div class="overlay"></div>
+        <div class="_inner_section">
+            <h2 class="wow fadeIn" data-wow-delay="0.5s">Our Benefits</h2>
+            <ul>
+                {{#if benefits}}
+                {{#each benefits}}
+                <li class="wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="{{../API_URL}}{{Media.url}}">
+                    <h2>{{Title}}</h2>
+                    <p>{{Description}}</p>
+                </li>
+                {{/each}}
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</section>
+<!---our benefit section-->
+
+
+<!---building life cycle section-->
+<section role="building life cycle section">
+    <div class="_building_life_cycle" id="_building_life_cycle">
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.5s">{{data.LifeCycleHeading}}</h2>
+            <p class="wow fadeIn" data-wow-delay="0.7s">{{{data.LifecycleDescription}}}</p>
+            <div class="_cycle_section">
+                <div class="_card">
+                    <img src="images/trangle_image.png">
+                    <ul>
+
+                        {{#if buildingLifeCycleSlider}}
+                        {{#each buildingLifeCycleSlider}}
+                        <li class="{{ClassName}} wow fadeIn _lifeCycleEvent _opacity60" data-index="{{@index}}"
+                            data-wow-delay="0.2s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>{{Year}}</span>
+                            </a>
+                        </li>
+                        {{/each}}
+                        {{/if}}
+
+                        {{!-- <li class="one_year wow fadeIn" data-wow-delay="0.2s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li class="five_year wow fadeIn" data-wow-delay="0.4s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>5</span>
+                            </a>
+                        </li>
+                        <li class="sixty_year wow fadeIn" data-wow-delay="0.6s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>60</span>
+                            </a>
+                        </li>
+                        <li class="fourty_year wow fadeIn" data-wow-delay="0.8s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>40</span>
+                            </a>
+                        </li>
+                        <li class="morefive_year wow fadeIn" data-wow-delay="0.9s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>>5</span>
+                            </a>
+                        </li>
+                        <li class="twenty_year wow fadeIn" data-wow-delay="1s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>20</span>
+                            </a>
+                        </li>
+                        <li class="ten_year wow fadeIn" data-wow-delay="1.1s">
+                            <a href="javascript:void(0);">
+                                <small>year</small>
+                                <span>10</span>
+                            </a>
+                        </li> --}}
+                    </ul>
+                </div>
+                <div class="slider_new wow fadeInUp" data-wow-delay="0.5s">
+                    {{#if buildingLifeCycleSlider}}
+                    {{#each buildingLifeCycleSlider}}
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>{{Title}}</h2>
+                            <p>{{Description}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+
+                    {{!-- <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>Construction Completed</h2>
+
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>Building Operation</h2>
+                            <p>Once a building is in operation, JEDI continuously collects, analyze and learn to
+                                optimize building performance</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>Retro Commissioning</h2>
+                            <p>JEDI helps to identify new operational improvements to help building owners enhance the
+                                overall performance of their building
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>Equipment Replacement</h2>
+                            <p>Using the Data we collected, JEDI help support investment decisions to decide when and
+                                what equipment to replace</p>
+
+
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>2nd Equipment Replacement</h2>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <h2>Building Decommissioned</h2>
+                            <p>Using all the data collected, JEDI will help the next phase of Design planning to build
+                                better buildings</p>
+                        </div>
+                    </div> --}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---building life cycle section-->
+
+
+<!---find out section-->
+<section role="find out section">
+    <div class="_find_out_section">
+        <div class="overlay"></div>
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.5s">{{data.HelpHeading}}</h2>
+            <div class="_btn_sec">
+                <p class="wow fadeIn" data-wow-delay="0.2s">Our Services<a href="{{data.HelpUrl}}"><img
+                            src="images/Jedi_Home_Arrow_Big.png"></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!---find out section-->

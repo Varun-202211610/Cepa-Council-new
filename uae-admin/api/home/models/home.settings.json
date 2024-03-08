@@ -1,0 +1,178 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "BannerHeading": {
+      "type": "string"
+    },
+    "BannerDescription": {
+      "type": "richtext"
+    },
+    "BannerButtonLink": {
+      "type": "string"
+    },
+    "DiscoverIntro": {
+      "type": "richtext"
+    },
+    "DiscoverButtonLink": {
+      "type": "string"
+    },
+    "DiscoverIcon1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "DiscoverIcon1Text": {
+      "type": "string"
+    },
+    "DiscoverIcon2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "DiscoverIcon2Text": {
+      "type": "string"
+    },
+    "DiscoverIcon3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "DiscoverIcon3Text": {
+      "type": "string"
+    },
+    "DiscoverIcon4": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "DiscoverIcon4Text": {
+      "type": "string"
+    },
+    "HomeIntroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "HomeIntroText": {
+      "type": "text"
+    },
+    "HomeIntroJoinText": {
+      "type": "text"
+    },
+    "HomeIntroButtonLink": {
+      "type": "string"
+    },
+    "UpcomingEventsBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "HighGrowthBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "EconomicCorpBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "HomeIntroTextHeading": {
+      "type": "string"
+    },
+    "HomeIntroJoinTextHeading": {
+      "type": "string"
+    },
+    "TabHeading1": {
+      "type": "string"
+    },
+    "TabHeading2": {
+      "type": "string"
+    },
+    "UpdatesSectionHeading": {
+      "type": "string"
+    },
+    "UpcomingEventsHeading": {
+      "type": "string"
+    }
+  }
+}

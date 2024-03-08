@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/areas-economic-corps",
+      "handler": "areas-economic-corp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/areas-economic-corps/count",
+      "handler": "areas-economic-corp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/areas-economic-corps/:id",
+      "handler": "areas-economic-corp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/areas-economic-corps",
+      "handler": "areas-economic-corp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/areas-economic-corps/:id",
+      "handler": "areas-economic-corp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/areas-economic-corps/:id",
+      "handler": "areas-economic-corp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

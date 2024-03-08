@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactuses",
+  "info": {
+    "name": "ContactUs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "organisation": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "mobileCode": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "interested": {
+      "type": "string"
+    },
+    "revenue": {
+      "type": "float"
+    },
+    "addedOn": {
+      "type": "datetime"
+    },
+    "business": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "latest_updates",
+  "info": {
+    "name": "LatestUpdates"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "addedOn": {
+      "type": "datetime"
+    },
+    "dateText": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

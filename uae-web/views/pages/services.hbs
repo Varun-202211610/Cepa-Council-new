@@ -1,0 +1,174 @@
+{{> header}}
+
+<!--banner section-->
+<section role="banner section">
+    <div class="_service_section"
+        style="background : url({{API_URL}}{{data.Banner.url}}) center center/cover no-repeat;"
+        data-background="{{API_URL}}{{data.Banner.url}}">
+        <div class="overlay"></div>
+        <div class="_inner_section">
+            <div class="_text_section">
+                <h2 class="wow fadeIn" data-wow-delay="0.3s">{{data.Heading}}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--banner section-->
+
+<!--energy optimization section-->
+<section role="Energy Optimization">
+    <span class="anchor" id="EnergyOptimization"></span>
+    <div class="_energy_optimization">
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.3s">{{data.EnergyOptimization}}</h2>
+            <p class="wow fadeIn" data-wow-delay="0.5s">
+                {{{data.EnergyOptimizationDescription}}}
+            </p>
+
+            {{!-- <div id="myDiv1" style="float :left ; width : 100%; height : 100%;">
+
+            </div>
+
+            <div id="myDiv2" style="float :left ; width : 100%; height : 100%;">
+
+            </div>
+
+            <div id="myDiv3" style="float :left ; width : 100%; height : 100%;">
+
+            </div> --}}
+
+            <div class="_energy_section">
+                <div class="slider_energy" id="LoadPrediction">
+
+
+
+                    {{#if LoadPrediction}}
+                    {{#each LoadPrediction}}
+                    <div class="slider__item" style="width:100%;">
+                        <div class="_caption wow fadeInUp" data-wow-delay="0.3s">
+                            <h2>{{Heading}}</h2>
+                            {{!-- <img src="{{../API_URL}}{{Media.url}}"> --}}
+                            <div id="{{GraphContainer}}" style="width : 100%; height : 100%;"></div>
+                            <p>{{Description}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--energy optimization section-->
+
+<!---learn more section-->
+<section role="learn more section">
+    <div class="_learn_more_section">
+        <div class="overlay"></div>
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.3s">Learn More About Our Technology</h2>
+            <div class="_btn_sec wow fadeIn" data-wow-delay="0.5s" id="FaultDetection">
+                <p>Our Technology<a href="/technology"><img src="images/Jedi_Home_Arrow_Big.png"></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!---learn more section-->
+
+<!--energy optimization section-->
+
+<section>
+    <div class="_energy_optimization">
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.3s">{{data.FaultDetection}}</h2>
+            <p class="wow fadeIn" data-wow-delay="0.5s">{{{data.FaultDetectionDescription}}}</p>
+
+            <div class="_energy_section">
+                <div class="slider_energy">
+
+                    {{#if MinimizeDowntime}}
+                    {{#each MinimizeDowntime}}
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-delay="0.3s">
+                            <h2>{{Heading}}</h2>
+                            <img src="{{../API_URL}}{{Media.url}}">
+                            <p>{{Description}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--energy optimization section-->
+
+<!---Understand more section-->
+<section role="Understand more section">
+    <div class="_understand_more_section">
+        <div class="overlay"></div>
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.3s">To Understand More About JEDI's Application</h2>
+            <div class="_btn_sec wow fadeIn" data-wow-delay="0.3s" id="AnalyticsDashboard">
+                <p>Insights<a href="/insights"><img src="images/Jedi_Home_Arrow_Big.png"></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!---Understand more section-->
+
+
+<!--fault detection section-->
+
+<section role="Energy Optimization">
+    <div class="anchor"></div>
+    <div class="_energy_optimization">
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.3s">{{data.AnalyticsDashboard}}</h2>
+            <p class="mb0 wow fadeIn" data-wow-delay="0.5s">{{data.AnalyticsDashboardDescription}}</p>
+
+
+            <div class="_energy_section">
+                <div class="slider_energy">
+                    {{#if AnalyticsDashboard}}
+                    {{#each AnalyticsDashboard}}
+                    <div class="slider__item">
+                        <div class="_caption wow fadeInUp" data-wow-delay="0.3s">
+                            <h2>{{Title}}</h2>
+                            <img src="{{../API_URL}}{{Media.url}}">
+                            <p>{{Description}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--fault detection section-->
+
+
+
+<!---find out section-->
+<section role="find out section">
+    <div class="_find_out_section"
+        style="background: url({{API_URL}}{{data.HelpBackground.url}}) center center/cover no-repeat;"
+        data-background="{{API_URL}}{{data.HelpBackground.url}}">
+        <div class="overlay"></div>
+        <div class="_inner">
+            <h2 class="wow fadeIn" data-wow-delay="0.3s">Find Out How We Can Help</h2>
+            <div class="_btn_sec wow fadeIn" data-wow-delay="0.5s">
+                <p>Contact Us<a href="/contact"><img src="images/Jedi_Home_Arrow_Big.png"></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!---find out section-->

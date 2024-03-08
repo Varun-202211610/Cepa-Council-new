@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/home-growth-opportunities",
+      "handler": "home-growth-opportunities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-growth-opportunities/count",
+      "handler": "home-growth-opportunities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-growth-opportunities/:id",
+      "handler": "home-growth-opportunities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/home-growth-opportunities",
+      "handler": "home-growth-opportunities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/home-growth-opportunities/:id",
+      "handler": "home-growth-opportunities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/home-growth-opportunities/:id",
+      "handler": "home-growth-opportunities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

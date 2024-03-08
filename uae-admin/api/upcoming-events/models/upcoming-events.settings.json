@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upcoming_events",
+  "info": {
+    "name": "UpcomingEvents",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "string"
+    },
+    "addedOn": {
+      "type": "date"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "eventDate": {
+      "type": "date"
+    },
+    "dateText": {
+      "type": "string"
+    },
+    "knowMore": {
+      "type": "boolean"
+    }
+  }
+}

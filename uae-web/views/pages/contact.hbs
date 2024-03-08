@@ -1,0 +1,91 @@
+{{> header}}
+<style>
+    #error_message {
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background: #00BBD4;
+        padding: 0px;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 0.6px;
+        font-family: 'Conv_Epilogue-Medium';
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+</style>
+<!--banner section-->
+<section role="banner section">
+    <div class="_contact_banner_section"
+        style="background: url({{API_URL}}{{data.Banner.url}}) center center/cover no-repeat;"
+        data-background="{{API_URL}}{{data.Banner.url}}">
+        <div class="overlay"></div>
+        <div class="_inner_section">
+            <div class="_text_section">
+                <h2 class="wow fadeInUp" data-wow-delay="0.5s">{{data.Title}}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--banner section-->
+
+<!---contact section-->
+<section role="contact section">
+    <div class="_contact_section">
+        <div class="_inner_section">
+            <h2 class="wow fadeIn" data-wow-delay="0.5s">{{data.Headquarter}}</h2>
+            <div class="_left  fadeInUp" data-wow-delay="0.5s">
+                <ul>
+                    <li><img src="images/map.png" style="position:relative;top: -7px;">
+                        <p>{{data.Address}}
+                        </p>
+                    </li>
+                    <li><img src="images/phone.png">
+                        <p><a href="tel:+852 2807 1717">{{data.Phone}}</a></p>
+                    </li>
+                    <li><img src="images/email.png">
+                        <p><a href="mailto:jedi-tech@jec.com">{{data.Email}}</a></p>
+                    </li>
+                    <li><img src="images/web.png">
+                        <p><a href="jedi-tech.co">{{data.WebsiteUrl}}</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="_right wow fadeInUp" data-wow-delay="0.5s">
+                <div class="_map">
+                    <iframe src="{{data.MapUrl}}" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     
+
+                </div>
+            </div>
+            <span class="anchor" id="inquiry"></span>
+            <div class="_contact_form">
+                <h2 class="wow fadeIn" data-wow-delay="0.5s">Get in Touch</h2>
+                <p class="wow fadeIn" data-wow-delay="0.5s">If you wish to know more about our expertise, or shall you
+                    have any questions for our
+                    team, send us a message and we will get in touch shortly.
+                </p>
+                <div class="_form_section wow fadeInUp" data-wow-delay="0.9s">
+                    <form action="/" id="_contactForm" name="_contactForm">
+                        <div id="error_message">
+                        </div>
+                        <div class="_filed">
+                            <input type="text" placeholder="Name" name="name" id="name">
+                        </div>
+                        <div class="_filed">
+                            <input type="text" placeholder="Email" name="email" id="email">
+                        </div>
+                        <div class="_filed">
+                            <textarea cols="5" rows="10" placeholder="Message" name="message" id="message"></textarea>
+                        </div>
+                        <div class="_btn">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                    <span class="_message_submit"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---contact section-->

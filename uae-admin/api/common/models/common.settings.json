@@ -1,0 +1,73 @@
+{
+  "kind": "singleType",
+  "collectionName": "commons",
+  "info": {
+    "name": "Common",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "TwitterLink": {
+      "type": "string"
+    },
+    "InstagramLink": {
+      "type": "string"
+    },
+    "LinkedinLink": {
+      "type": "string"
+    },
+    "ContactBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ContactMobileBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "AgreementLink": {
+      "type": "string"
+    },
+    "HandbookLink": {
+      "type": "string"
+    },
+    "AgreementHeading": {
+      "type": "string"
+    },
+    "HandbookHeading": {
+      "type": "string"
+    }
+  }
+}

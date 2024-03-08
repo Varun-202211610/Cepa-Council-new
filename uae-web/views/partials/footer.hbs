@@ -1,0 +1,184 @@
+<style>
+  #terms-error{
+    position: absolute;
+    top: 22px;
+}
+@media(max-width:900px){
+  #terms-error{
+    top:35px;
+  }
+}
+</style>
+
+<!---Footer section-->
+<section role="footer section">
+  <div class="_footer_section">
+    <div class="_max_width">
+      <div class="inner">
+        <div class="_left">
+          <div class="_ft_item">
+            <div class="_items_left wow fadeInUp" data-wow-delay="0.3s">
+              <img src="{{API_URL}}{{common.Logo.url}}" />
+            </div>
+            <div class="_items_right wow fadeInUp" data-wow-delay="0.3s">
+              <ul>
+
+                {{#if menu}}
+                {{#each menu}}
+                <li><a href="{{Link}}" class="{{Class}}">{{Title}}</a></li>
+                {{/each}}
+                {{/if}}
+
+
+                {{!-- <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="javascript:void(0);" class="modal-toggle">Contact Us</a></li> --}}
+                <!--<li><a href="javascript:void(0);">UAE-India</a></li>-->
+                <!--<li><a href="javascript:void(0);">FAQ</a></li>-->
+                <!--<li><a href="javascript:void(0);">Open Data</a></li>-->
+                <!--<li><a href="javascript:void(0);">Careers</a></li>-->
+                <!--<li><a href="javascript:void(0);">Copyrights</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="_right">
+          <div class="_rt_items">
+            <div class="_para_left">
+              <div class="_text wow fadeInUp" data-wow-delay="0.3s">
+                <strong>{{common.AgreementHeading}}</strong>
+                <span><a target="_blank" href="{{common.AgreementLink}}" style="color: #000">View the Agreement</a></span>
+              </div>
+              <div class="_text wow fadeInUp" data-wow-delay="0.3s">
+                <strong>{{common.HandbookHeading}}</strong>
+                <span><a target="_blank" href="{{common.HandbookLink}}" style="color: #000" target="_blank">View the Handbook</a></span>
+              </div>
+              <!-- <div class="_text wow fadeInUp" data-wow-delay="0.3s">
+                                    <strong>What you need to know about
+                                        UAE-INDIA CEPA COUNCIL</strong>
+                                    <span>January 25, 2023</span>
+                                </div> -->
+            </div>
+            <div class="_para_right wow fadeInUp" data-wow-delay="0.3s">
+              <strong>Newsletter</strong>
+              <p>Sign up and get updates on the latest CEPA news.</p>
+              <form action="/" id="newsletter-form" novalidate="novalidate">
+                <input type="email" placeholder="Email Address" name="nemail" />
+                <button>Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="_copy_right wow fadeInUp" data-wow-delay="0.3s">
+        <p>© 2023 all rights reserved</p>
+        <ul>
+          <!-- <li><a href="javascript:void(0);"><img src="./images/F-Icon.png"></a></li> -->
+          <li>
+            <a href="{{common.TwitterLink}}" target="_blank"><img src="./images/t-Icon.png" /></a>
+          </li>
+          <li>
+            <a href="{{common.InstagramLink}}" target="_blank"><img src="./images/In-Icon.png" /></a>
+          </li>
+          <li>
+            <a href="{{common.LinkedinLink}}" target="_blank"><img src="./images/Iink-Icon.png" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!---Footer section-->
+
+
+<div class="modal">
+  <div class="modal-overlay modal-toggle"></div>
+  <div class="modal-wrapper modal-transition">
+    <div class="modal-header">
+      <button class="modal-close modal-toggle"><img src="./images/Cross_icon.png" style="width: 20px" /></button>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-content">
+        <div class="_left">
+          <img src="{{API_URL}}{{common.ContactBanner.url}}" class="_desktop" />
+          <img src="{{API_URL}}{{common.ContactMobileBanner.url}}" class="_mobile" />
+        </div>
+        <div class="_right">
+          <form action="" method="post" id="register-form" novalidate="novalidate">
+            <div class="_filed">
+              <label>Name</label>
+              <input type="text" style="padding: 10px 10px 10px 100px" name="name" />
+              <select name="prefix" class="_option">
+                <option value="N/A">N/A</option>
+                <option value="Prof">Prof</option>
+                <option value="Sheikh">Sheikh</option>
+                <option value="Sheikha">Sheikha</option>
+                <option value="Sir">Sir</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="Miss">Miss</option>
+                <option value="HE">HE</option>
+                <option value="Dr">Dr</option>
+              </select>
+            </div>
+            <div class="_filed">
+              <label>Organisation</label>
+              <input type="text" name="organisation" />
+            </div>
+            <div class="_filed">
+              <label>Address</label>
+              <input type="text" name="address" />
+            </div>
+            <div class="_filed _dflex">
+              <div class="_width50">
+                <label>Mobile</label>
+                <input type="text" maxlength="10" id="mobile_code" class="form-control" name="mobile" />
+              </div>
+              <div class="_width50 _mobile_top">
+                <label>Nature of Business</label>
+                <input type="text" name="business" />
+              </div>
+            </div>
+            <div class="_filed">
+              <label>E-mail</label>
+              <input type="text" name="email" />
+            </div>
+            <div class="_filed _dflex">
+              <div class="_width50">
+                <label>Interested in</label>
+                <select id="interested" name="interested">
+                  <option value="Please Select">Please Select</option>
+                  <option value="Export to the UAE">Export to the UAE</option>
+                  <option value="Import from  the UAE">Import from the UAE</option>
+                  <option value="Both">Both</option>
+                </select>
+              </div>
+              <div class="_width50">
+                <label>Annual Revenue (USD)</label>
+                <input type="text" name="revenue" />
+              </div>
+            </div>
+            <!-- <div class="_filed">
+                                <label>Membership Category</label>
+                                <select>
+                                    <option value="Please Select">Please Select</option>
+                                    <option value="Executive">Executive</option>
+                                    <option value="Associate">Associate</option>
+                                    <option value="Partner">Partner</option>
+                                </select>
+                            </div> -->
+            <div class="_filed _checkbox">
+              <input type="checkbox" value="1" name="terms" />
+              <span>By registering here you are agreeing to our <a href="javascript:void(0);">terms and conditions</a></span>
+            </div>
+            <div class="_filed" style="margin-top: 20px;">
+              <button type="submit" name="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
